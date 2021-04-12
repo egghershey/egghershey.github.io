@@ -1,5 +1,149 @@
-h1 {
+body {
+  color: #333;
+  font-family: Verdana, sans-serif;
+  /* margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px; */
+  margin: 0;
+}
+
+header {
+  background-color: #efefef;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.container {
+  /* background-color: pink; */
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  /* flexbox は親要素に指定 */
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  /* background-color: skyblue; */
+}
+
+.info {
+  /* background-color: tomato; */
+  margin-left: 32px;
+}
+
+.icon img {
+  /* border-radius: 20px; */
+  border-radius: 50%;
+  border-width: 4px;
+  border-style: solid;
+  border-color: white;
+}
+
+.info h1 {
+  font-weight: normal;
+  font-size: 24xp;
+  margin: 0;
+}
+
+.info p {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.info ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.info ul li {
+  margin-right: 8px;
+}
+
+.works {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.works > h1 {
+  /* works 直下の h1 のみに適用 */
+  font-weight: normal;
   font-size: 24px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid #ddd;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.works > section {
+  margin-bottom: 60px;
+}
+
+.works > section > h1 {
+  font-weight: normal;
+}
+
+.works p {
+  /* 文字高さの1.8倍 */
+  line-height: 1.8;
+}
+
+.btn {
+  padding: 8px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 60px;
+  color: gray;
+}
+
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+h1 span {
+  text-decoration: line-through;
+}
+
+.comment {
+  padding-bottom: 50px;
 }
